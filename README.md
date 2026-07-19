@@ -6,7 +6,8 @@ A plant identification tool for the Light Phone III: point it at a plant, snap a
 
 ## Important Notes
 - Photos you take with this tool are submitted for identification to a third party service, the Pl@ntNet API. 
-- The current plan being used by the tool supports up to 500 identifications per day across all users. If enough people start using the tool, I will 
+- The current plan being used by the tool supports up to 500 identifications per day across all users. If enough people start using the tool, I will evaluate how to proceed to increase usage limits.
+- Currently the tool operates in black and white. Eventually I may determine a way to allow colors to be displayed, but I plan to try to always keep the black and white as an option, or possibly the default.
 
 ## Instructions
 
