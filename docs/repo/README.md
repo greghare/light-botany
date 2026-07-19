@@ -1,7 +1,7 @@
 # Light SDK Repo
 This repository contains a number of interdependent Gradle modules that make up the Light SDK. Here are their high level descriptions + a chart showing their relationships:
 
-### [`:bible`](../../bible)
+### [`:botany`](../../botany)
 This is the scaffold dev environment in which you should write your custom Light Phone tool, assuming that's what you're here to do! This module compiles into an Android APK which can be installed onto a Light Phone or Android emulator.
 
 ### [`:plugin`](../../plugin)

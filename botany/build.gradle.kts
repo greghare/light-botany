@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -21,11 +23,22 @@ android {
         }
     }
 
+    // The Pl@ntNet API key is baked into the APK at build time only - it's never
+    // user-configurable and never committed (local.properties is gitignored).
+    val localProperties = Properties().apply {
+        val f = rootProject.file("local.properties")
+        if (f.exists()) f.inputStream().use { load(it) }
+    }
+    val plantNetApiKey = localProperties.getProperty("plantnet.apiKey", "")
+        .ifBlank { System.getenv("PLANTNET_API_KEY") ?: "" }
+
     defaultConfig {
         minSdk = rootProject.ext["minSdk"] as Int
         targetSdk = rootProject.ext["targetSdk"] as Int
 
         manifestPlaceholders["sdkVersion"] = property("sdkVersion") as String
+
+        buildConfigField("String", "PLANTNET_API_KEY", "\"$plantNetApiKey\"")
     }
 
     buildFeatures {
@@ -65,7 +78,7 @@ androidComponents {
     onVariants(selector().withBuildType("release")) { variant ->
         variant.outputs.forEach { output ->
             (output as com.android.build.api.variant.impl.VariantOutputImpl)
-                .outputFileName.set("bible-${android.defaultConfig.versionName}.apk")
+                .outputFileName.set("botany-${android.defaultConfig.versionName}.apk")
         }
     }
 }

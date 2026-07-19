@@ -1,6 +1,6 @@
 # Declaring Tool Metadata
 
-Every tool needs a handful of pieces of metadata: a unique id, a display name, a version, and a list of any permissions it will need to ask of LightOS. You declare all of these in a single file ([`bible/lighttool.toml`](../../bible/lighttool.toml)) and the SDK's build process will handle the job of injecting them into your compiled tool.
+Every tool needs a handful of pieces of metadata: a unique id, a display name, a version, and a list of any permissions it will need to ask of LightOS. You declare all of these in a single file ([`botany/lighttool.toml`](../../botany/lighttool.toml)) and the SDK's build process will handle the job of injecting them into your compiled tool.
 
 > [!NOTE]
 > If you're familiar with Android development, you'll be used to putting this metadata into your `build.gradle` and/or `AndroidManifest.xml` files. This is still happening under the hood via our build plugin, we just wanted to create a single, simple place for tool devs to enter this info.

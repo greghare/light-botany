@@ -40,5 +40,5 @@ include(":sdk:ui")
 include(":sdk:client")
 include(":sdk:server")
 include(":sdk:emulator")
-include(":bible")
+include(":botany")
 

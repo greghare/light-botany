@@ -1,16 +1,19 @@
-# Bible
+# Botany
 
-A simple, distraction-free Bible reading app for the Light Phone III, with ESV text and audio, verse highlighting, and search.
+A plant identification tool for the Light Phone III: point it at a plant, snap a photo, and get its common name, scientific name, and family via the Pl@ntNet API. Save identifications to by adding plants to your Collection.
+
+## Important Notes
+- Photos you take with this tool are submitted for identification to a third party service, the Pl@ntNet API. 
+- The current plan being used by the tool supports up to 500 identifications per day across all users. If enough people start using the tool, I will 
 
 ## Instructions
 
-1. **Download and install the APK.** Grab the latest release from the [releases page](https://github.com/greghare/light-bible/releases) and install it on your device.
-2. **Get a free ESV API key and enter it in the app.** Request a key at [api.esv.org](https://api.esv.org), then open the app's **Settings** tab and paste it into the **ESV API Key** field.
+1. **Download and install the APK.** Grab the latest release from the [releases page](https://github.com/lightphone/light-sdk/releases) and install it on your device.
+2. **Grant camera access** the first time you open the tool - it's required to identify plants.
 
 ## Features
-
-- Read any book and chapter of the Bible, with adjustable text size, line spacing, and verse numbers
-- Listen to chapter audio, with play/pause, scrubbing, skip-back-15-seconds, and automatic advance to the next chapter
-- Highlight verses and revisit them from the Highlights tab
-- Search the full text of the Bible
-- Light and dark mode
+    
+- Over 50,000 identifiable species
+- Plant identification via the Pl@ntNet API (common name, scientific name, family, match confidence)
+- Save identified plants to your Collection with photo, date, and details
+- Location field in Settings (informational only - used to help judge whether a plant is native to your area)

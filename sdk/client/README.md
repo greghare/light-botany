@@ -168,7 +168,7 @@ This module is wired up with the [`:plugin`](../../plugin) build plugin, which r
 
 ## Related
 
-- [`:bible`](../../bible) — the scaffold module you actually edit when building a tool.
+- [`:botany`](../../botany) — the scaffold module you actually edit when building a tool.
 - [`:sdk:ui`](../ui) — Compose components and theme tokens (`LightText`, `LightTheme`, etc.).
 - [`:sdk:shared`](../shared) — constants and serializable data models shared with `:sdk:server`.
 - [`:sdk:server`](../server) — the LightOS side of the connection that `:sdk:client` talks to.
